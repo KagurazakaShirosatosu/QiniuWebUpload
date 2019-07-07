@@ -19,7 +19,7 @@
 			}
 			.center {
 				width: 600px;
-				height: 300px;
+				height: 370px;
 				position: relative;
 				overflow: hidden;
 				position: relative;
@@ -33,6 +33,15 @@
 				text-align: center;
 				font-size: 24px;
 			}
+			.code {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 20px;
+				font-size: 16px;
+				border: none;
+				background-color: rgba(255,255,255,0);
+				font-family: 'ZCOOL XiaoWei', serif;
+			}
 			.upload {
 				width: 200px;
 				height: 50px;
@@ -42,7 +51,7 @@
 				border-radius: 5px;
 				border: 1px #CCCCCC;
 				color: #FFFFFF;
-				position: absolute;
+				position: relative;
 				left: 50%;
 				top: 40%;
 				margin-left: -100px;
@@ -52,9 +61,10 @@
 			.info {
 				width: 100%;
 				overflow: hidden;
-				position: absolute;
+				position: relative;
 				top: 70%;
 				text-align: center;
+				font-family: 'ZCOOL XiaoWei', serif;
 			}
 			.status {
 				text-align: center;
@@ -87,14 +97,18 @@
 					<h1>7️⃣🐮☁✔🐘💾🚀</h1>
 				</div>
 				<form action="" method="post" name="upload_form">
+					<div class="info">
+						<input type="text" class="code" name="code" placeholder="那么，请先告诉我你的邀请码" onfocus="clearDefault(this)" />
+					</div>
 					<div>
 						<input type="file" name="file" value="" id="file">
-							<button class="upload" type="button">
-								<label class="button" for="file">选择文件</label>
-							</button>
+						<button class="upload" type="button">
+							<label class="button" for="file">然后选择文件</label>
+						</button>
 					</div>
 					<div class="info">
-						<input class="status" type="text" name="info" value="请上传文件"><br>
+						<p>不要传黄暴涉政的东西，相信你们都是好孩子</p>
+						<input class="status" type="text" name="info" value="点上面选择文件上传"><br>
 						<input class="url" type="text" name="file_url" value="">
 						<input type="hidden" name="key" value="" id=""> <br/>
 						<input type="hidden" name="token" value=""> <br/>
